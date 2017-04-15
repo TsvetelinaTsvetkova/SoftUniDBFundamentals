@@ -85,7 +85,8 @@
     </Compile>
     <Compile Include="SystemModules\BaseSystemModule\BaseMenu.cs" />
     <Compile Include="SystemModules\BaseSystemModule\BaseMenuLogicHandler.cs" />
-    <Compile Include="SystemModules\ProjectModule\Commands\Back.cs" />
+    <Compile Include="SystemModules\ProjectModule\Commands\BackToBaseMenu.cs" />
+    <Compile Include="SystemModules\ProjectModule\Commands\BackToProjectMenu.cs" />
     <Compile Include="SystemModules\ProjectModule\Commands\ListAllProjects.cs" />
     <Compile Include="SystemModules\ProjectModule\ProjectMenu.cs" />
     <Compile Include="SystemModules\ProjectModule\ProjectMenuLogicHandler.cs" />

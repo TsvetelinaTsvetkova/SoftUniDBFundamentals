@@ -71,6 +71,10 @@ namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
                             pointer = 1;
                         }
                         break;
+                    case "Escape":
+                        var backCommand = new BackToProjectMenu();
+                        backCommand.ReturnToBaseMenu();
+                        break;
                 }
             }
         }

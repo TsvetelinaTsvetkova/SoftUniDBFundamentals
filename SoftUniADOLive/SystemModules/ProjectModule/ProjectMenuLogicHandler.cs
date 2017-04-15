@@ -29,7 +29,7 @@ namespace SoftUniADOLive.SystemModules.ProjectModule
             }
             else if (command == back)
             {
-                var back = new Back();
+                var back = new BackToBaseMenu();
                 back.ReturnToBaseMenu();
             }
         }
