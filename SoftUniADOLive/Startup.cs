@@ -7,6 +7,7 @@
     using System.Threading.Tasks;
     using SystemModules.BaseSystemModule;
     using SystemModules.ProjectModule;
+    using SystemModules.ProjectModule.Commands;
 
     class Startup
     {
@@ -14,13 +15,8 @@
         {
             var context = new SoftUniEntities();
 
-            var baseMenu = new BaseMenu();
-
-            var option = baseMenu.PrintAllMainModulesOptions();
-
-            var baseMenuLogicHandler = new BaseMenuLogicHandler(context);
-
-            baseMenuLogicHandler.InvokeActionBaseOnUserSelection(option);
+            BackToBaseMenu baseMenu = new BackToBaseMenu(context);
+            baseMenu.HandleBaseMenu();                      
         }
     }
 }

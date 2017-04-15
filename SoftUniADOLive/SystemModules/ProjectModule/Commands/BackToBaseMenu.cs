@@ -15,7 +15,7 @@ namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
         {
             this.context = context;
         }
-        public void ReturnToBaseMenu()
+        public void HandleBaseMenu()
         {
             var baseMenu = new BaseMenu();
             int userSelection = baseMenu.PrintAllMainModulesOptions();
