@@ -9,11 +9,20 @@ namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
 {
   public class BackToBaseMenu
     {
+        private SoftUniEntities context;
 
+        public BackToBaseMenu(SoftUniEntities context)
+        {
+            this.context = context;
+        }
         public void ReturnToBaseMenu()
         {
             var baseMenu = new BaseMenu();
-            baseMenu.PrintAllMainModulesOptions();
+            int userSelection = baseMenu.PrintAllMainModulesOptions();
+
+            var baseMenuLogicHandler = new BaseMenuLogicHandler(context);
+
+            baseMenuLogicHandler.InvokeActionBaseOnUserSelection(userSelection);
         }
     }
 }

@@ -88,6 +88,8 @@
     <Compile Include="SystemModules\ProjectModule\Commands\BackToBaseMenu.cs" />
     <Compile Include="SystemModules\ProjectModule\Commands\BackToProjectMenu.cs" />
     <Compile Include="SystemModules\ProjectModule\Commands\ListAllProjects.cs" />
+    <Compile Include="SystemModules\ProjectModule\Commands\SearchProjectByName.cs" />
+    <Compile Include="SystemModules\ProjectModule\Commands\ShowProjectDetails.cs" />
     <Compile Include="SystemModules\ProjectModule\ProjectMenu.cs" />
     <Compile Include="SystemModules\ProjectModule\ProjectMenuLogicHandler.cs" />
     <Compile Include="Town.cs">

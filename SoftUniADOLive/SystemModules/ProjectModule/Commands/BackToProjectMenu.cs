@@ -1,17 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
+﻿namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
 {
     public class BackToProjectMenu
     {
+        private SoftUniEntities context;
+
+        public BackToProjectMenu(SoftUniEntities context)
+        {
+            this.context = context;
+        }
         public void ReturnToBaseMenu()
         {
             var projectMenu = new ProjectMenu();
-            projectMenu.DisplayProjectMenu();
+            int userSelection = projectMenu.DisplayProjectMenu();
+
+            var projectMenuLogicHolder = new ProjectMenuLogicHandler(context);
+
+            projectMenuLogicHolder.HandlerProjectMenuCommand(userSelection);
         }
     }
 }

@@ -15,6 +15,8 @@ namespace SoftUniADOLive.SystemModules.ProjectModule
 
         private int back = 8;
 
+        private int searchByProjectName = 3;
+
         public ProjectMenuLogicHandler(SoftUniEntities context)
         {
             this.context = context;
@@ -22,6 +24,7 @@ namespace SoftUniADOLive.SystemModules.ProjectModule
 
         public void HandlerProjectMenuCommand(int command)
         {
+
             if (command == this.listAllProjectsInProjectMenu)
             {
                 var listAllProject = new ListAllProjects();
@@ -29,9 +32,15 @@ namespace SoftUniADOLive.SystemModules.ProjectModule
             }
             else if (command == back)
             {
-                var back = new BackToBaseMenu();
+                var back = new BackToBaseMenu(context);
                 back.ReturnToBaseMenu();
             }
+            else if (command == searchByProjectName)
+            {
+                var showProjectByName = new SearchProjectByName(context);
+                showProjectByName.Search();
+            }
+
         }
     }
 }

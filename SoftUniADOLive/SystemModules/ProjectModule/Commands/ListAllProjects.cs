@@ -72,7 +72,7 @@ namespace SoftUniADOLive.SystemModules.ProjectModule.Commands
                         }
                         break;
                     case "Escape":
-                        var backCommand = new BackToProjectMenu();
+                        var backCommand = new BackToProjectMenu(context);
                         backCommand.ReturnToBaseMenu();
                         break;
                 }

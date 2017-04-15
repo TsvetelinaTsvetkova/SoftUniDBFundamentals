@@ -9,12 +9,11 @@ C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniAD
 C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniADOLive.exe
 C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniADOLive.pdb
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\SoftUniADOLive.exe.config
-C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\obj\Debug\SoftUniADOLive.exe
-C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\obj\Debug\SoftUniADOLive.pdb
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\SoftUniADOLive.exe
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\SoftUniADOLive.pdb
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\EntityFramework.dll
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\EntityFramework.xml
 C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\obj\Debug\SoftUniADOLive.csprojResolveAssemblyReference.cache
+C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\obj\Debug\SoftUniADOLive.exe
+C:\Users\Deni\Documents\GitHub\SampleConsoleApp-master\SoftUniDBFundamentals\SoftUniADOLive\obj\Debug\SoftUniADOLive.pdb
