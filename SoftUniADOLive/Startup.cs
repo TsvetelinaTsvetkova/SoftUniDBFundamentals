@@ -20,9 +20,15 @@
             var context = new SoftUniEntities();
 
             ListAll(context);
+            SearchProjectByName(context);
         }
 
-        static void ListAll(SoftUniEntities context)
+        private static void SearchProjectByName(SoftUniEntities context)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void ListAll(SoftUniEntities context)
         {
             int pageSize = 14;
 
