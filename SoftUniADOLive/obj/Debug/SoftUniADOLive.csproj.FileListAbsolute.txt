@@ -1,0 +1,10 @@
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\SoftUniADOLive.exe.config
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\SoftUniADOLive.exe
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\SoftUniADOLive.pdb
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\EntityFramework.dll
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\EntityFramework.xml
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniADOLive.csprojResolveAssemblyReference.cache
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniADOLive.exe
+C:\Users\Deni\Desktop\SampleConsoleApp-master\SoftUniADOLive\obj\Debug\SoftUniADOLive.pdb
