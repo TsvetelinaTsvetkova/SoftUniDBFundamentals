@@ -5,27 +5,30 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using SystemModules.BaseSystemModule;
+    using SystemModules.ProjectModule;
 
     class Startup
     {
         static void Main(string[] args)
         {
-            // Window initialization
-            Console.WindowHeight = 17;
-            Console.BufferHeight = 17;
-            Console.WindowWidth = 50;
-            Console.BufferWidth = 50;
+            var baseMenu = new BaseMenu();
+            var option = baseMenu.PrintAllMainModulesOptions();
+
+            var baseMenuLogicHandler = new BaseMenuLogicHandler();
+
+            baseMenuLogicHandler.InvokeActionBaseOnUserSelection(option);
 
             // DB init 
-            var context = new SoftUniEntities();
+            //var context = new SoftUniEntities();
 
             //ListAll(context);
-            SearchProjectByName(context);
+            //SearchProjectByName(context);
 
-            //comment
-            var selectedOption = DisplayProjectMenu();
+            ////comment
+            //var selectedOption = DisplayProjectMenu();
 
-            NavigateAfterProjectMenuSelection(selectedOption,context);
+            //NavigateAfterProjectMenuSelection(selectedOption,context);
         }
 
         private static void NavigateAfterProjectMenuSelection(int selectedOption, SoftUniEntities context)
@@ -58,32 +61,13 @@
             {
 
             }
-
-        }
-
-        private static int DisplayProjectMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("Please select an option");
-            Console.WriteLine("1. List all project");
-            Console.WriteLine("2. View details for specific project");
-            Console.WriteLine("3. Search for project by name");
-            Console.WriteLine("4. Assign employees");
-            Console.WriteLine("5. Release employees");
-            Console.WriteLine("6. Create new project");
-            Console.WriteLine("7. Edit project");
-
-            var selectedOption = int.Parse(Console.ReadLine());
-
-            while (selectedOption < 1 || selectedOption > 7)
+            else if (selectedOption == 8)
             {
-                Console.Write("Please enter an existing command: ");
 
-                selectedOption = int.Parse(Console.ReadLine());
             }
-
-            return selectedOption;
         }
+
+
 
         private static void SearchProjectByName(SoftUniEntities context)
         {
