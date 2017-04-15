@@ -7,32 +7,33 @@ using System.Threading.Tasks;
 
 namespace SoftUniADOLive.SystemModules.BaseSystemModule
 {
-   public class BaseMenuLogicHandler
+    public class BaseMenuLogicHandler
     {
         private BaseMenu baseMenu;
 
         private ProjectMenu projectMenu;
 
-        public BaseMenuLogicHandler()
+        private int projectSubMenuSelection = 2;
+
+        private SoftUniEntities context;
+
+        public BaseMenuLogicHandler(SoftUniEntities context)
         {
+            this.context = context;
             this.baseMenu = new BaseMenu();
             this.projectMenu = new ProjectMenu();
         }
 
         public void InvokeActionBaseOnUserSelection(int option)
         {
-            if (option == 2)
+            if (option == this.projectSubMenuSelection)
             {
-              
                 var selectedOptionFromProjectMenu = projectMenu.DisplayProjectMenu();
 
-                if (selectedOptionFromProjectMenu == 8)
-                {
-                    
-                    this.InvokeActionBaseOnUserSelection(baseMenu.PrintAllMainModulesOptions());
-                }
-            }
+                var projectHandler = new ProjectMenuLogicHandler(context);
 
+                projectHandler.HandlerProjectMenuCommand(selectedOptionFromProjectMenu);
+            }
         }
     }
 }
