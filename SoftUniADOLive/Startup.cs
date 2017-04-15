@@ -25,12 +25,39 @@
             //comment
             var selectedOption = DisplayProjectMenu();
 
-            NavigateAfterProjectMenuSelection();
+            NavigateAfterProjectMenuSelection(selectedOption,context);
         }
 
-        private static void NavigateAfterProjectMenuSelection()
+        private static void NavigateAfterProjectMenuSelection(int selectedOption, SoftUniEntities context)
         {
-         
+            if (selectedOption == 1)
+            {
+                ListAll(context);
+            }
+            else if (selectedOption == 2)
+            {
+
+            }
+            else if (selectedOption == 3)
+            {
+                SearchProjectByName(context);
+            }
+            else if (selectedOption == 4)
+            {
+
+            }
+            else if (selectedOption == 5)
+            {
+
+            }
+            else if (selectedOption == 6)
+            {
+
+            }
+            else if (selectedOption == 7)
+            {
+
+            }
 
         }
 
