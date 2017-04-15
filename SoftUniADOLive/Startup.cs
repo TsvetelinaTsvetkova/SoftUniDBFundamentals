@@ -19,15 +19,64 @@
             // DB init 
             var context = new SoftUniEntities();
 
-            ListAll(context);
+            //ListAll(context);
             SearchProjectByName(context);
 
             //comment
+            var selectedOption = DisplayProjectMenu();
+
+            NavigateAfterProjectMenuSelection();
+        }
+
+        private static void NavigateAfterProjectMenuSelection()
+        {
+         
+
+        }
+
+        private static int DisplayProjectMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Please select an option");
+            Console.WriteLine("1. List all project");
+            Console.WriteLine("2. View details for specific project");
+            Console.WriteLine("3. Search for project by name");
+            Console.WriteLine("4. Assign employees");
+            Console.WriteLine("5. Release employees");
+            Console.WriteLine("6. Create new project");
+            Console.WriteLine("7. Edit project");
+
+            var selectedOption = int.Parse(Console.ReadLine());
+
+            while (selectedOption < 1 || selectedOption > 7)
+            {
+                Console.Write("Please enter an existing command: ");
+
+                selectedOption = int.Parse(Console.ReadLine());
+            }
+
+            return selectedOption;
         }
 
         private static void SearchProjectByName(SoftUniEntities context)
         {
-            throw new NotImplementedException();
+            Console.Write("Please enter project name: ");
+            var name = Console.ReadLine();
+
+            var project = context.Projects.FirstOrDefault(p => p.Name == name);
+
+            try
+            {
+                ShowDetails(project);
+            }
+            catch (Exception)
+            {
+
+
+            }
+
+
+
         }
 
         private static void ListAll(SoftUniEntities context)
@@ -101,6 +150,12 @@
 
         static void ShowDetails(Project project)
         {
+            if (project == null)
+            {
+                Console.WriteLine("The project is not existing");
+                throw new ArgumentNullException();
+            }
+
             //-------------------------------------------------------
             Console.Clear();
             Console.WriteLine($"ID: {project.ProjectID,4}| {project.Name}");
@@ -187,7 +242,5 @@
 
             //-------------------------------
         }
-
-
     }
 }
